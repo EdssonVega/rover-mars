@@ -1,0 +1,111 @@
+import React from "react";
+import "./plateau.css"
+
+
+export default function PlateauGrid(){
+    return(
+        <div className="plateau">
+            <div className="area1"></div>
+            <div className="area2"></div>
+            <div className="area3"></div>
+            <div className="area4"></div>
+            <div className="area5"></div>
+            <div className="area6"></div>
+            <div className="area7"></div>
+            <div className="area8"></div>
+            <div className="area9"></div>
+            <div className="area10"></div>
+            <div className="area11"></div>
+            <div className="area12"></div>
+            <div className="area13"></div>
+            <div className="area14"></div>
+            <div className="area15"></div>
+            <div className="area16"></div>
+            <div className="area17"></div>
+            <div className="area18"></div>
+            <div className="area19"></div>
+            <div className="area20"></div>
+            <div className="area21"></div>
+            <div className="area22"></div>
+            <div className="area23"></div>
+            <div className="area24"></div>
+            <div className="area25"></div>
+            <div className="area26"></div>
+            <div className="area27"></div>
+            <div className="area28"></div>
+            <div className="area29"></div>
+            <div className="area30"></div>
+            <div className="area31"></div>
+            <div className="area32"></div>
+            <div className="area33"></div>
+            <div className="area34"></div>
+            <div className="area35"></div>
+            <div className="area36"></div>
+            <div className="area37"></div>
+            <div className="area38"></div>
+            <div className="area39"></div>
+            <div className="area40"></div>
+            <div className="area41"></div>
+            <div className="area42"></div>
+            <div className="area43"></div>
+            <div className="area44"></div>
+            <div className="area45"></div>
+            <div className="area46"></div>
+            <div className="area47"></div>
+            <div className="area48"></div>
+            <div className="area49"></div>
+            <div className="area50"></div>
+            <div className="area51"></div>
+            <div className="area52"></div>
+            <div className="area53"></div>
+            <div className="area54"></div>
+            <div className="area55"></div>
+            <div className="area56"></div>
+            <div className="area57"></div>
+            <div className="area58"></div>
+            <div className="area59"></div>
+            <div className="area60"></div>
+            <div className="area61"></div>
+            <div className="area62"></div>
+            <div className="area63"></div>
+            <div className="area64"></div>
+            <div className="area65"></div>
+            <div className="area66"></div>
+            <div className="area67"></div>
+            <div className="area68"></div>
+            <div className="area69"></div>
+            <div className="area70"></div>
+            <div className="area71"></div>
+            <div className="area72"></div>
+            <div className="area73"></div>
+            <div className="area74"></div>
+            <div className="area75"></div>
+            <div className="area76"></div>
+            <div className="area77"></div>
+            <div className="area78"></div>
+            <div className="area79"></div>
+            <div className="area80"></div>
+            <div className="area81"></div>
+            <div className="area82"></div>
+            <div className="area83"></div>
+            <div className="area84"></div>
+            <div className="area85"></div>
+            <div className="area86"></div>
+            <div className="area87"></div>
+            <div className="area88"></div>
+            <div className="area89"></div>
+            <div className="area90"></div>
+            <div className="area91"></div>
+            <div className="area92"></div>
+            <div className="area93"></div>
+            <div className="area94"></div>
+            <div className="area95"></div>
+            <div className="area96"></div>
+            <div className="area97"></div>
+            <div className="area98"></div>
+            <div className="area99"></div>
+            <div className="area100"></div>
+         
+        </div>
+    )
+}
