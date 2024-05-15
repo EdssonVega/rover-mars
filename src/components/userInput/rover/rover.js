@@ -1,6 +1,7 @@
 import React from "react";
 import "./rover.css";
 
+
 export default function ExerciseCode({ initialcoordinates = "", userCommandLine = "", submit, setSubmit }) {
     let icArray = initialcoordinates.split(" ");
     let uclArray = userCommandLine.split("");
@@ -70,15 +71,15 @@ export default function ExerciseCode({ initialcoordinates = "", userCommandLine 
   
     if (submit === true) {
       commandLine();    
-      setSubmit(false);  
+      setSubmit(false); 
     }
 
   return (
     <div className="resultContainer">
       <h1>
-        1st rover final destination:{" "}
+        1st rover final destination:
         <span>
-         {submit === true ?  "" + coordinateX + " " + coordinateY + " "  + facing  : "" }
+         {submit === false ?  "" + coordinateX + " " + coordinateY + " "  + facing  : "" }
         </span>
       </h1>
     </div>
