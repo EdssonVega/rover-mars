@@ -1,11 +1,13 @@
-import logo from './logo.svg';
+
 import './App.css';
-import PlateauGrid from './plateau/plateau';
+import ExerciseCode from './components/userInput/rover/rover';
+import UserInput from './components/userInput/userInput';
 
 function App() {
   return (
     <div className="App">
-      <PlateauGrid />
+      <UserInput />
+      <ExerciseCode />
     </div>
   );
 }
