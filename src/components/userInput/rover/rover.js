@@ -7,90 +7,88 @@ export default function ExerciseCode(){
     
 
 
-let initialcoordinates = "1 2 N"
+let initialcoordinates = "3 3 E"
 let icArray = initialcoordinates.split(" ")
 
-let userCommandLine = "LMLMLMLMM"
+let userCommandLine = "MMRMMRMRRM"
 let uclArray = userCommandLine.split("")
 
-let roverCoordinates={
-    coordinateX: parseInt(icArray[0]),
-    coordinateY: parseInt(icArray[1]),
-    roverFacing: icArray[2] 
-}; 
+let coordinateX = parseInt(icArray[0])
+let coordinateY = parseInt(icArray[1])
 
+let facing = icArray[2] 
 
-const rotateRight = (roverCoordinates) => {
-    if(roverCoordinates.roverFacing==="N"){ 
+const rotateRight = () => {
+    if(facing ==="N"){ 
         return(
-            roverCoordinates.roverFacing ="E"
+            facing ="E"
         )
     }
-    if(roverCoordinates.roverFacing==="E"){
+    if(facing==="E"){
         return(
-            roverCoordinates.roverFacing="S"
+            facing="S"
         )
     }
-    if(roverCoordinates.roverFacing==="S"){
+    if(facing==="S"){
         return(
-            roverCoordinates.roverFacing="O"
+            facing="O"
         )
     }
-    if(roverCoordinates.roverFacing==="O"){
+    if(facing==="O"){
         return(
-            roverCoordinates.roverFacing="N"
+            facing="N"
         )
     }
 }
 
-const rotateLeft = (roverCoordinates) =>{
-    if(roverCoordinates.roverFacing==="N"){
+const rotateLeft = () =>{
+    if(facing==="N"){
         return(
-            roverCoordinates.roverFacing="O"
+            facing="O"
         )
     }
-    if(roverCoordinates.roverFacing==="O"){
+    if(facing==="O"){
         return(
-            roverCoordinates.roverFacing="S"
+            facing="S"
         )
     }
-    if(roverCoordinates.roverFacing==="S"){
+    if(facing==="S"){
         return(
-            roverCoordinates.roverFacing="E"
+            facing="E"
         )
     }
-    if(roverCoordinates.roverFacing==="E"){
+    if(facing==="E"){
         return(
-            roverCoordinates.roverFacing="N"
-        )
-    }
-}
-
-const moveStraight=(roverCoordinates)=>{
-    if(roverCoordinates.roverFacing==="N"){
-        return(
-            roverCoordinates.coordinateY = roverCoordinates.coordinateY + 1
-        )
-    }
-    if(roverCoordinates.roverFacing==="E"){
-        return(
-            roverCoordinates.coordinateX = roverCoordinates.coordinateX + 1
-        )
-    }
-    if(roverCoordinates.roverFacing==="S"){
-        return(
-            roverCoordinates.coordinateY = roverCoordinates.coordinateY - 1
-        )
-    }
-    if(roverCoordinates.roverFacing==="O"){
-        return(
-            roverCoordinates.coordinateX = roverCoordinates.coordinateX - 1
+            facing="N"
         )
     }
 }
 
+const moveStraight=()=>{
+    if(facing==="N"){
+        return(
+            coordinateY =coordinateY+1
+        )
+    }
+    if(facing==="E"){
+        return(
+            coordinateX =coordinateX+1
+        )
+    }
+    if(facing==="S"){
+        return(
+            coordinateY =coordinateY-1
+        )
+    }
+    if(facing==="O"){
+        return(
+            coordinateX =coordinateX-1
+        )
+    }
+}
 
-const commandLine = () => {
+
+let commandLine = ()=> {
     for (let uclarrays of uclArray){
         if(uclarrays==="R"){
             rotateRight()
@@ -101,15 +99,15 @@ const commandLine = () => {
             moveStraight()
         }
     }
+    console.log(coordinateX, coordinateY, facing)
 }
 
-console.log(commandLine)
-
+commandLine(facing, coordinateX, coordinateY)
 
 
 return(
     <div className="resultContainer">
-        respuesta
+        <h1>1st rover final destination: <span>{coordinateX} {coordinateY} {facing}</span></h1>
     </div>
 )
 
