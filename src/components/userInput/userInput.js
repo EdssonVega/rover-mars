@@ -1,15 +1,21 @@
 import React from "react";
 import "./userInput.css"
 
-export default function UserInput({sendInfo}){
-
+export default function UserInput({setInitialcoordinates,setUserCommandLine, setSubmit}){
 
     const getInitialCoordinatesRoverOne = (e) =>{
         let userInputcoordinates = e.target.value
-        console.log(userInputcoordinates)
-        return userInputcoordinates
+        setInitialcoordinates(userInputcoordinates);
     }
-
+     
+    const getCommandLine = (e) =>{
+        let userInputCommandLine = e.target.value
+        setUserCommandLine(userInputCommandLine);
+    }
+    
+    const calculate = () => {
+        setSubmit(true);
+    }
     
     
 
@@ -21,13 +27,13 @@ export default function UserInput({sendInfo}){
             <label htmlFor="roverInitialCoordinate">Set the initial coordinate of the 1st rover:</label>
             <input type="text" placeholder="Example: 1 2 N" id="roverInitialCoordinate" onChange={getInitialCoordinatesRoverOne}/>
             <label htmlFor="roverMovement">Set the movement of the 1st rover:</label>
-            <input type="text" placeholder="Example: LMLMLMLMM" id="roverMovement"/> 
+            <input type="text" placeholder="Example: LMLMLMLMM" id="roverMovement" onChange={getCommandLine}/> 
 
             <label htmlFor="secondRoverInitialCoordinate">Set the initial coordinate of the 2nd rover:</label>
             <input type="text" placeholder="Example: 1 2 N" id="secondRoverInitialCoordinate" onChange={getInitialCoordinatesRoverOne}/>
             <label htmlFor="secondRoverMovement">Set the movement of the 2nd rover:</label>
             <input type="text" placeholder="Example: LMLMLMLMM" id="secondRoverMovement"/>
-            <button>Calculate</button>          
+            <button onClick={calculate}>Calculate</button>          
         </section>
     )
 }
