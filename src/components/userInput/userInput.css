@@ -15,15 +15,35 @@
 }
 
 .form label{
-    color: blue;
+    color: rgb(109, 21, 180);
     font-weight: 500;
     cursor: pointer;
 }
 
 .form input{
     height: 2rem;
-    width: 80%;
+    width: 90%;
     outline: none;
     border-radius: 5px;
     padding: 0 0 0 10px
+}
+
+#plateau, #roverMovement, #secondRoverMovement{
+    margin-bottom: 25px;
+}
+
+.form button{
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    width: fit-content;
+    align-self: center;
+    padding:0 15px;
+    border: none;
+    background-color: rgb(109, 21, 180);
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
 }

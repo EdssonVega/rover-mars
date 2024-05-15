@@ -5,7 +5,10 @@
 }
 
 .App {
-  background-color: black;
+  background: url("./components/images/ivan-jevtic-AL3Cbxp8css-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+  background-size: 100% 100%;
   display: flex;
   align-items: center;
   justify-content: center;
