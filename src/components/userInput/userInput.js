@@ -22,7 +22,7 @@ export default function UserInput({setInitialcoordinates,setUserCommandLine,setI
         setUserCommandLineSR(userInputCommandLineSR);
     }
     
-    
+
     const calculate = () => {
         setSubmit(true);
     }
@@ -30,6 +30,7 @@ export default function UserInput({setInitialcoordinates,setUserCommandLine,setI
     
 
     return(
+        <>
         <section className="form">
             <label htmlFor="plateau">Set the size of the plateau: </label>
             <input type="text" placeholder="Example: 5 5" id="plateau"/>
@@ -45,5 +46,6 @@ export default function UserInput({setInitialcoordinates,setUserCommandLine,setI
             <input type="text" placeholder="Example: LMLMLMLMM" id="secondRoverMovement" onChange={getCommandLineSR}/>
             <button onClick={calculate}>Calculate</button>          
         </section>
+        </>
     )
 }

@@ -17,8 +17,10 @@ function App() {
   return (
     <div className="App">
       <UserInput setInitialcoordinates={setInitialcoordinates} setUserCommandLine={setUserCommandLine} setInitialcoordinatesSR={setInitialcoordinatesSR} setUserCommandLineSR={setUserCommandLineSR} setSubmit={setSubmit}/>
+    <div className={submit===true?"resultContainer":"resultContainerHidden"}>
       <ExerciseCode initialcoordinates={initialcoordinates} userCommandLine={userCommandLine} submit={submit} setSubmit={setSubmit}/>
       <ExerciseCodeSR initialcoordinatesSR={initialcoordinatesSR} userCommandLineSR={userCommandLineSR} submit={submit} setSubmit={setSubmit}/>
+    </div>
     </div>
   );
 }

@@ -71,17 +71,15 @@ export default function ExerciseCode({ initialcoordinates = "", userCommandLine 
   
     if (submit === true) {
       commandLine();    
-      setSubmit(false); 
+      /*setSubmit(false); */
     }
 
   return (
-    <div className="resultContainer">
       <h1>
         1st rover final destination:
         <span>
-         {submit === false ?  "" + coordinateX + " " + coordinateY + " "  + facing  : "" }
+         {coordinateX} {coordinateY} {facing}
         </span>
       </h1>
-    </div>
   );
 }

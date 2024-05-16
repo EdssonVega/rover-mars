@@ -68,20 +68,19 @@ export default function ExerciseCodeSR({ initialcoordinatesSR = "", userCommandL
       }
       console.log(coordinateXSR, coordinateYSR, facingSR);
     };
-  
+    
     if (submit === true) {
-      commandLineSR();    
-      setSubmit(false); 
-    }
-
-  return (
-    <div className="resultContainer">
-      <h1>
-        2nd rover final destination:
-        <span>
-         {submit === false ?  "" + coordinateXSR + " " + coordinateYSR + " "  + facingSR  : "" }
-        </span>
-      </h1>
-    </div>
-  );
-}
+        commandLineSR();    
+        /*setSubmit(false); */
+      }
+  
+    return (
+        <h1>
+          2nd rover final destination:
+          <span>
+             {coordinateXSR} {coordinateYSR} {facingSR}
+          </span>
+        </h1>
+    );
+  }
+  
